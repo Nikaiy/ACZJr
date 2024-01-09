@@ -1,4 +1,4 @@
-@media (max-width:480px) {
+@media (min-width:0px) and (max-width:480px) {
 
     .container {
         width: 480px;
@@ -7,37 +7,58 @@
         justify-content: center;
         align-items: center;
     }
-
+    
+    
     /* START HEADER */
+    
+    header {
+        width: 480px;
+        border-bottom: 1px solid rgb(218, 214, 214);
+    }
+    
     .header {
+        width: 480px;
+        padding: 0px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        padding: 5px;
+        justify-content:center;
     }
-    .header--nav {
+    
+    .header--logo img {
+        width: 200px;
+    }
+    
+    .header--nav  {
         display: none;
     }
-
+    
     /* START BANNER */
     #section--carrosel {
         margin: 0;
         display: flex;
         flex-direction: column;
-        height: 300px;
+        height: 500px;
         margin-top: 20px;
     
     }
     .slider {
         width: 480px;
-        height: 500px;
+        height: 300px;
         overflow: hidden;
     }
-
+    .slider--width {
+        height: 100%;
+        display: flex;
+        transition: all ease 0.3s;
+    }
+    .slider--item{
+        width: 100vw;
+        height: inherit;
+    }
+    
     /* START QUEM SOMOS */
-
     #section--quem-somos {
-        margin-top: 10px;
+        margin-top: -175px;
     }
     
     
@@ -45,352 +66,153 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 480px;
-        max-width: 1220px;
-        height: 600px;
-    }
-    .quem--somos-body {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 0px;
-        gap: 30px;
-        margin-top: 10px;
-    }
-    .quem--somos--body-img {
-        align-items: center;
         justify-content: center;
         width: 480px;
+        height: auto;
     }
-    .quem--somos--body-img img {
+    .quem--somos-body {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        padding: 0px;
+        margin-top: 0px;
+    }
+    .quem--somos--body-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
     }
-
-    
+    .quem--somos--body-img img {
+        width: 480px;
+    }
     .quem--somos--body-text {
         display: flex;
         flex-direction: column;
         align-items:center;
         justify-content: center;
-
     }
-    .quem-somos--title {
+    .quem-somos--titl {
         font-size: 32px;
         text-transform: uppercase;
         font-weight: 700;
     }
     .quem-somos--body-text {
         padding: 15px;
-        width: 100%;
+        width: 480px;
         text-align:justify;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
         color: #615f5f;
     }
-
-
-    /* START SERVIÇOS */
-
-#section--servicos {
-    display: flex;
-    margin-top: 170px;
-    padding-bottom: 80px;
-}
-.section--servicos-main-title {
-    font-size: 36px;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
-}
-.section--servicos-main {
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-    width: 100%;
-}
-.cards {
-    display: none;
-    gap:175px;
-}
-.cards--mobile {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 140px;
-}
-.cards--row-mobile {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    height: 50px;
-}
-.card-mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 45%;
-    height: 170px;
-    border: 1px solid green;
-    border-radius: 15px;
-}
-.card--title-mobile {
-    text-align: center;
-    font-size: 22px;
-    font-weight: 500;
-    color: #615f5f;
-}
-.card--body-mobile {
-    text-align: center;
-    font-size: 12px;
-    width: 200px;
-}
-.cards-mobile {
-    text-align: center;
-    font-size: 10px;
-    max-width: 350px;
-}
-
-
-/* START CONTATOS */
-
-#section--contato {
-    margin-top: 70px;
-    height: 50px;
-}
-
-.section--contato-main-title {
-    font-size: 32px;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
-}
-.section--contato-main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.section--area-contato {
-    width: 100%;
-    height: 200px;
-}
-.redes--socias-contato {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-.rede-social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.rede-social a img {
-    width: 26px;
-}
-}
-
-
-
-
-
-@media (max-width:768px) {
     
-}
-
-@media (max-width:992px) {
-    .container {
-        width: 992px;
-        margin: auto;
+    /* START SERVIÇOS */
+    
+    #section--servicos {
+        display: none;
+        margin-top: -80px;
+        padding-bottom: 80px;
+    }
+    .section--servicos-main-title {
+        font-size: 32px;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+    }
+    .section--servicos-main {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 100%;
+    }
+    .cards {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:175px;
+    }
+    .cards--row {
         display: flex;
         justify-content: center;
-        align-items: center;
+        gap: 20px;
+        height: 50px;
     }
-
-    /* START HEADER */
-    .header {
+    .card {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 5px;
+        gap: 10px;
+    
+        width: 45%;
+        height: 200px;
+        border: 1px solid green;
+        border-radius: 15px;
     }
-    .header--nav {
+    .card--title {
+        text-align: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: #615f5f;
+    }
+    .card--body {
+        text-align: center;
+        font-size: 14px;
+        max-width: 350px;
+    }
+    .cards--mobile {
         display: none;
     }
-
-    /* START BANNER */
-    #section--carrosel {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        height: 300px;
-        margin-top: 20px;
     
-    }
-    .slider {
-        width: 820px;
-        height: 500px;
-        overflow: hidden;
-    }
-
-    /* START QUEM SOMOS */
-
-    #section--quem-somos {
-        margin-top: 10px;
+    /* START CONTATOS */
+    
+    #section--contato {
+        display: none;
+        height: 50px;
     }
     
-    
-    .section--quem--somos-nos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 880px;
-        max-width: 880px;
-        height: 600px;
-    }
-    .quem--somos-body {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 0px;
-        gap: 30px;
-        margin-top: 10px;
-    }
-    .quem--somos--body-img {
-        align-items: center;
-        justify-content: center;
-        width: 880px;
-    }
-    .quem--somos--body-img img {
-        width: 100%;
-    }
-
-    
-    .quem--somos--body-text {
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        justify-content: center;
-
-    }
-    .quem-somos--title {
+    .section--contato-main-title {
         font-size: 32px;
         text-transform: uppercase;
         font-weight: 700;
+        text-align: center;
     }
-    .quem-somos--body-text {
-        padding: 15px;
+    .section--contato-main {
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        text-align:justify;
-        font-size: 14px;
-        font-weight: 400;
-        color: #615f5f;
     }
-
-
-    /* START SERVIÇOS */
-
-#section--servicos {
-    display: flex;
-    margin-top: 350px;
-    padding-bottom: 80px;
-}
-.section--servicos-main-title {
-    font-size: 36px;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
-}
-.section--servicos-main {
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-    width: 100%;
-}
-.cards {
-    display: none;
-    gap:175px;
-}
-.cards--mobile {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 140px;
-}
-.cards--row-mobile {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    height: 50px;
-}
-.card-mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 45%;
-    height: 170px;
-    border: 1px solid green;
-    border-radius: 15px;
-}
-.card--title-mobile {
-    text-align: center;
-    font-size: 22px;
-    font-weight: 500;
-    color: #615f5f;
-}
-.card--body-mobile {
-    text-align: center;
-    font-size: 12px;
-    width: 200px;
-}
-.cards-mobile {
-    text-align: center;
-    font-size: 10px;
-    max-width: 350px;
+    
+    .section--area-contato {
+        width: 100%;
+        height: 200px;
+    }
+    .redes--socias-contato {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .rede-social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .rede-social a img {
+        width: 26px;
+    }
+    
+    /* STAR FOOTER */
+    footer {
+        margin-top: 100px;
+        width: 100%;
+        background-color: #000;
+        height: 200px;
+    }
 }
 
 
-/* START CONTATOS */
-
-#section--contato {
-    margin-top: 70px;
-    height: 50px;
-}
-
-.section--contato-main-title {
-    font-size: 32px;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
-}
-.section--contato-main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.section--area-contato {
-    width: 100%;
-    height: 200px;
-}
-.redes--socias-contato {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-.rede-social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.rede-social a img {
-    width: 26px;
-}
-}
